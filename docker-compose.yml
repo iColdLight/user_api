@@ -1,0 +1,11 @@
+version: '2'
+services:
+  postgres:
+    container_name: userapidb
+    image: postgres:12.0-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=coldlight
+      - POSTGRES_DB=person_db
+      - POSTGRES_PASSWORD=coldlight
