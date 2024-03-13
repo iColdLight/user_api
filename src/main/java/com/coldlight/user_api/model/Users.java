@@ -28,13 +28,10 @@ public class Users extends BaseEntity {
     private LocalDateTime updated;
 
     @Column(name = "first_name", length = 32)
-    private String firstName;
+    public String firstName;
 
     @Column(name = "last_name", length = 32)
     private String lastName;
-
-    @Column(name = "verification_status", length = 128)
-    private String verificationStatus;
 
     @Column(name = "verified_at", nullable = false)
     private LocalDateTime verifiedAt;
