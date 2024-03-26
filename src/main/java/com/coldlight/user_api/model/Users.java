@@ -1,9 +1,7 @@
 package com.coldlight.user_api.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.springframework.data.relational.core.mapping.Table;
 
 import javax.persistence.Column;
@@ -13,8 +11,8 @@ import java.util.UUID;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
+@EqualsAndHashCode(callSuper=true)
 @Table(name = "users")
 public class Users extends BaseEntity {
 
@@ -50,4 +48,6 @@ public class Users extends BaseEntity {
 
     @Transient
     private Addresses addresses;
+
+
 }

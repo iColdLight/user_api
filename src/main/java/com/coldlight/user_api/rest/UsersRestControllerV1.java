@@ -4,6 +4,8 @@ import com.coldlight.user_api.model.Users;
 import com.coldlight.user_api.model.VerificationStatuses;
 import com.coldlight.user_api.service.UsersService;
 import com.coldlight.user_api.service.VerificationStatusesService;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
